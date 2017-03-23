@@ -7,21 +7,35 @@
     <title>umeko</title>
     <style>
       <!--
-      img{
-        user-select:none;
-        -moz-user-select:none;
-        -ms-user-select:none;
-        -webkit-user-select:none;
-        -khtml-user-select:none;
-        -webkit-user-drag: none;
-        -khtml-user-drag: none;
-        -webkit-touch-callout: none;
-        -moz-touch-callout: none;
+      /*img{*/
+        /*user-select:none;*/
+        /*-moz-user-select:none;*/
+        /*-ms-user-select:none;*/
+        /*-webkit-user-select:none;*/
+        /*-khtml-user-select:none;*/
+        /*-webkit-user-drag: none;*/
+        /*-khtml-user-drag: none;*/
+        /*-webkit-touch-callout: none;*/
+        /*-moz-touch-callout: none;*/
+      /*}*/
+
+      .guard{
+        position:relative;
+        width: 150px;
+      }
+      .guard_img{
+        position:absolute;
+        display:block;
+        width:100%;
+        height:100%;
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAHaTzTgAAAAKSURBVHgBY2AAAAACAAFzdQEYAAAAAElFTkSuQmCC);
       }
       -->
     </style>
   </head>
-  <body oncopy='return false;'>
-    <img src="https://farm9.staticflickr.com/8786/17841270820_d69b9c3b6b_k_d.jpg" width="50%">
+  <body>
+    <div class="guard">
+      <img src="https://farm9.staticflickr.com/8786/17841270820_d69b9c3b6b_k_d.jpg" width="100%" class="guard_img">
+    </div>
   </body>
 </html>

@@ -19,10 +19,15 @@
       .guard-box{
         position:relative;
       }
-      .guard-box:before{
+
+      .guard-box__img{
+        position: relative;
+      }
+
+      .guard-box__img:after{
         position:absolute;
         content: '';
-        /*display:block;*/
+        display:block;
         border: 4px solid #f00;
         width:100%;
         height: 100%;
@@ -32,15 +37,15 @@
         background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAHaTzTgAAAAKSURBVHgBY2AAAAACAAFzdQEYAAAAAElFTkSuQmCC);
       }
 
-      .guard-img{
-        position:absolute;
-        display:block;
-        border: 4px solid #f00;
-        width:100%;
-        height: 100%;
-        background-color: rgba(255,0,0, .4);
-        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAHaTzTgAAAAKSURBVHgBY2AAAAACAAFzdQEYAAAAAElFTkSuQmCC);
-      }
+      /*.guard-img{*/
+        /*position:absolute;*/
+        /*display:block;*/
+        /*border: 4px solid #f00;*/
+        /*width:100%;*/
+        /*height: 100%;*/
+        /*background-color: rgba(255,0,0, .4);*/
+        /*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABAQAAAAA3bvkkAAAAAnRSTlMAAHaTzTgAAAAKSURBVHgBY2AAAAACAAFzdQEYAAAAAElFTkSuQmCC);*/
+      /*}*/
 
       -->
     </style>
@@ -53,7 +58,10 @@
     <p>copy gard! </p>
     <div class="guard-box">
       <!--<span class="guard-img"></span>-->
-      <img src="https://farm9.staticflickr.com/8786/17841270820_d69b9c3b6b_k_d.jpg">
+      <div class="guard-box__img">
+        <img src="https://farm9.staticflickr.com/8786/17841270820_d69b9c3b6b_k_d.jpg">
+      </div>
+
     </div>
   </body>
 </html>
